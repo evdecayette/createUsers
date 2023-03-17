@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="CreateUser.UserMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="CSS/Style.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="sidebar">
+            <asp:Button runat="server" CssClass="btn btn-primary mt-1" ID="btnCreateUser" Text="Create User"/>
+            <asp:Button runat="server" CssClass="btn btn-primary mt-1" ID="Button1" Text="Delete User"/>
+            <asp:Button runat="server" CssClass="btn btn-primary mt-1" ID="Button2" Text="PlaceHolder1"/>
+            <asp:Button runat="server" CssClass="btn btn-primary mt-1" ID="Button3" Text="PlaceHolder2"/>
+            <!-- Sidebar content goes here -->
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+            </asp:ContentPlaceHolder>
+        </div>
+                       
+    </form>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
